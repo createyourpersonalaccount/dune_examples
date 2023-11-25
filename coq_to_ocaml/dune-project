@@ -1,0 +1,12 @@
+(lang dune 3.11)
+(using coq 0.8) ;; This is needed to use Coq extraction.
+
+(name coq_to_ocaml)
+
+(generate_opam_files true)
+
+(package
+ (name coq_to_ocaml)
+ (depends ocaml dune))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

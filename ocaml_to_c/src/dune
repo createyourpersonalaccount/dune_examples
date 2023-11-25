@@ -1,0 +1,12 @@
+(executable
+ (name CAPI)
+ (foreign_stubs (language c)
+                (names cstub))
+ (flags :standard -linkall)
+ (modes native)
+ (modules lib CAPI))
+
+(install
+ (section bin)
+ (files
+  (CAPI.exe as ocaml_to_c.exe)))

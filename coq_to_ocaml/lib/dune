@@ -1,0 +1,9 @@
+;; Creates a bitflip.ml and bitflip.mli from bitflip.v
+(coq.extraction
+ (prelude bitflip)
+ (extracted_modules bitflip))
+
+;; Uses the bitflip.ml and bitflip.mli to make a library.
+(library
+ (name coq_to_ocaml)
+ (modules bitflip))

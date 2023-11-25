@@ -1,0 +1,4 @@
+(executable
+ (public_name coq_to_ocaml)
+ (name main)
+ (libraries coq_to_ocaml))
